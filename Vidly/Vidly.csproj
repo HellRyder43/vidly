@@ -231,6 +231,10 @@
     <Compile Include="Migrations\202207060658274_MakeRequiredGenreMoviesModel.Designer.cs">
       <DependentUpon>202207060658274_MakeRequiredGenreMoviesModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207061451430_AddGenreIdInMovies.cs" />
+    <Compile Include="Migrations\202207061451430_AddGenreIdInMovies.Designer.cs">
+      <DependentUpon>202207061451430_AddGenreIdInMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -238,10 +242,12 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +314,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -367,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207060658274_MakeRequiredGenreMoviesModel.resx">
       <DependentUpon>202207060658274_MakeRequiredGenreMoviesModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207061451430_AddGenreIdInMovies.resx">
+      <DependentUpon>202207061451430_AddGenreIdInMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
